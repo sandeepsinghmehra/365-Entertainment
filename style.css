@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif; 
+  margin:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+                    'left-column navbar-column';
+    background-color: brown; 
+}
+
+.left-column{
+    grid-area: left-column;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+ 
+}
+.logo{
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    box-shadow: 2px 3px  4px 4px wheat;
+}
+
+.navbar-column{
+    grid-area: navbar-column;
+    display:flex;
+    justify-content: normal;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+}
+/*slideshow*/
+
+.mySlides {display: none}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  max-height: 80vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease size*/
+@media only screen and (max-width: 300px) {
+  .prev, .next{font-size: 11px}
+}
+/*section 02 style */
+.searchContainer{
+  background-color: black;
+  padding:20px;
+  width: 100%;
+}
+#selectionBar{
+  width: 15%;
+  display: inline-block;
+}
+#search{
+  display: inline-block;
+  width:80%;
+}
+#selectionBar,#search-input{
+  padding:5px;
+  border: 1px solid bisque;
+  border-radius: 3px;
+}
+#search-input{
+  width: 100%;
+  text-align: center;
+}
+
+#searchDiv{
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  width: 100%;
+  padding:10px;
+}
+.popular,.drama,.scifi{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5em;
+  grid-template-areas:
+   'heading heading heading heading'
+   'first-column second-column third-column forth-column'
+   'fifth-column sixth-column seventh-column eight-column';
+  background-color: black;
+}
+
+.heading{
+  grid-area:heading;
+  display: grid;
+  align-items: center;
+  border:solid;
+  border-bottom-width:thin; 
+  border-bottom-color: white;
+}
+.card{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.pack{
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  background-color: grey;
+  opacity: 0.9;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+#package-0{
+grid-area: first-column;
+}
+#package-1{
+  grid-area: second-column;
+}
+#package-2{
+  grid-area: third-column;
+}
+#package-3{
+  grid-area: forth-column;
+}
+#package-4{
+  grid-area: fifth-column;
+}
+#packaged,#package-0,#package-1,#package-2,#package-3,#package-4,#package-5,#package-6, #package-7, #package-8, #package-9, #package-10, #package-11, #package-12, #package-13, #package-14{
+  display:grid;
+  align-content:center;
+  justify-items: center;
+  width: 100%;
+  padding: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+  color:white;
+  padding: 0px;
+  margin: 0px;
+}
+/*footer Section */
+.footer-section{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+                    'left-column right-column';
+    background-color: brown; 
+}
+
+.left-column{
+    grid-area: left-column;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+ 
+}
+.right-column{
+    grid-area: right-column;
+    display:flex;
+    align-items: center;
+    justify-content: normal;
+}
+ 

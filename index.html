@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>365 Entertainment</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logoDiv" class="left-column">
+              <img src="./images/365 logo.jpg" alt="logo" class="logo">
+            </div>
+            
+                <ul class="navbar-column">
+                  <li>Movies</li>
+                  <li>TV Series</li>
+                  <li>Audio</li> 
+                </ul>
+        </div>
+    </header>
+    <section>
+          <div class="slideshow-container">
+              <img class="mySlides" src="/images/uri.jpg" style="width:100%">
+              <img class="mySlides" src="/images/kgf.jpg" style="width:100%">
+              <img class="mySlides" src="/images/laalkaptan.jpg" style="width:100%">
+              <img class="mySlides" src="/images/actionreply.jpg" style="width:100%">
+
+              <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="next" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+    </section>
+
+    <section>
+      <div class="searchContainer">
+       <select id="selectionBar">
+          <option value="movies">All</option>
+          <option value="Action" id="action">Action</option>
+          <option value="Drama" id="drama">Drama</option>
+          <option value="Sci-Fi" id="sci">Sci Fi</option>
+        </select>
+        <form id="search">
+          <input id="search-input" type="text" class="search" placeholder="search movies" required>
+        </form>
+        <div id="searchDiv">
+          <div class="box" id="resultDiv-0"></div>
+          <div class="box" id="resultDiv-1"></div>
+          <div class="box" id="resultDiv-2"></div>
+          <div class="box" id="resultDiv-3"></div>
+          <div class="box" id="resultDiv-4"></div>
+        </div>
+      </div>
+      <div class="popular">
+        <div class="heading">
+          <h1>Popular in Action</h1>
+        </div>
+        <div id="package-0"></div>
+        <div id="package-1"></div>
+        <div id="package-2"></div>
+        <div id="package-3"></div>
+        <div id="package-4"></div>
+      </div>
+      <div class="drama">
+        <div class="heading">
+          <h1>Popular in Drama</h1>
+        </div>
+        <div id="package-5"></div>
+        <div id="package-6"></div>
+        <div id="package-7"></div>
+        <div id="package-8"></div>
+        <div id="package-9"></div>
+      </div>
+      <div class="scifi">
+        <div class="heading">
+          <h1>Popular in Sci-Fi</h1>
+        </div>
+        <div id="package-10"></div>
+        <div id="package-11"></div>
+        <div id="package-12"></div>
+        <div id="package-13"></div>
+        <div id="package-14"></div>
+      </div>
+    </section>
+   <script src="script.js"></script>
+    <footer>
+        <div class="footer-section">
+            <div class="left-column">
+                 <img src="./images/365 logo.jpg" alt="logo" class="logo">
+            </div>
+            <div class="right-column">
+                 Powered by 365 Entertainment Portal 2020. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
