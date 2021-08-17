@@ -1,9 +1,6 @@
 const search = document.getElementById("search");
 const searchInput = document.getElementById("search-input");
 
-
-
-
 const movies = [
     {
         title: 'Uri: The Surgical Strike',
